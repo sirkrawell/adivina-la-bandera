@@ -1,0 +1,324 @@
+body {
+    background: #598CB8;
+    background: linear-gradient(90deg, rgba(89, 140, 184, 1) 0%, rgba(38, 89, 133, 1) 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera {
+    background-color: #1f1f1f;
+    height: 10vh;
+    display: flex;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.cabecera h1::after {
+    content: " by @lias";
+    font-size: 0.4em;
+}
+
+.seccion {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+
+.seccion-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* PARTE DE LA IMAGEN Y SU CUADRO */
+
+.seccion-2 > div {
+    height: 100%;
+}
+
+.seccion-2__imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-2__imagen__marco {
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 3%;
+    height: 253px;
+    width: 472px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.seccion-2__imagen-marco__imagen {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: 50% 50%;
+    
+}
+
+
+/* PARTE DEL BOTON Y TAMBIEN DONDE VA EL TEXTO*/
+
+.seccion-2__texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.seccion-2__texto__boton {
+    display: inline-block;
+    background-color: orange;
+    color: #fff;
+    padding: 5% 10%;
+    border-radius: 15px;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    transition: box-shadow .4s ease,transform .4s ease;
+}
+.seccion-2__texto__boton:hover {
+    box-shadow: 0 0 20px 10px orange;
+    transform: scale(1.1);
+}
+
+.seccion-2__texto__texto {
+    display: none;
+    background-color: #ceceff;
+    border: 1px solid #1a00aa;
+    color: #1a00aa;
+    margin: 20px 0;
+    padding: 5px 5px;
+    border-radius: 8px;
+    font-size: 1.3em;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.seccion-2__texto__texto--verde {
+    display: block;
+    background-color: #ceffde;
+    border: 1px solid #003f13;
+    color: #003f13;
+    transition: all 0.4s ease;
+    opacity: 1;
+}
+.seccion-2__texto__texto--rojo {
+    display: block;
+    background-color: #ffcece;
+    border: 1px solid #5e0000;
+    color: #5e0000;
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+
+
+
+
+
+
+/*PARTE DE LOS BOTONES DE LAS OPCIONES*/
+
+.seccion-2__botones {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+
+/* AQUI EDITARE LOS ESTILOS DE LSO BOTONES*/
+.boton {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 10px 0;
+    text-align: center;
+    height: fit-content;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.seccion-2__siguiente__boton1 {
+    visibility:hidden;
+    border: 2px solid #fff;
+    background: linear-gradient(to bottom, #00cc55, #0d582d);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    transition: background-color .4s ease,box-shadow .4s ease,transform .4s ease;
+}
+.seccion-2__siguiente__boton1:hover {
+     background-color: #00cc55;
+     box-shadow: 0 0 20px 10px #00cc55;
+     transform: scale(1.2);
+}
+
+.seccion-2__botones__boton1--deslizar--inicial {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease;
+
+}
+
+.seccion-2__botones__boton1--deslizar--final {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s ease;  
+    transition-delay: 0;
+
+}
+
+.seccion-2__botones__boton2--deslizar--inicial {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 0.1s;
+}
+
+.seccion-2__botones__boton2--deslizar--final {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s ease;  
+    transition-delay: 0.1s;
+
+}
+
+.seccion-2__botones__boton3--deslizar--inicial {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: 0.2s;
+}
+
+.seccion-2__botones__boton3--deslizar--final {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s ease;  
+    transition-delay: 0.2s;
+
+}
+
+
+/* CAMBIO DE COLOR BOTONES SI RESPUESTA ES BUENA O MALA */
+
+.verde {
+    border: solid 4px #fff;
+    color: #fff;
+    background-color: green;
+    transition: all 0.2s ease;
+    animation-name: saltito;
+    animation-duration: 0.3s;
+    animation-iteration-count: initial;
+    animation-delay: 0.1s;
+    animation-timing-function: ease;
+}
+
+@keyframes saltito {
+    0{
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+
+    100%{
+        transform: translateX(0);
+
+    }
+}
+
+.rojo {
+    border: solid 4px #fff;
+    color: #fff;
+    background-color: #c20000;
+    transition: all 0.2s ease;
+    animation-name: saltito;
+    animation-duration: 0.3s;
+    animation-iteration-count: initial;
+    animation-delay: 0.1s;
+    animation-timing-function: ease;
+}
+
+@keyframes saltito {
+    0{
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+
+    100%{
+        transform: translateX(0);
+
+    }
+}
+
+
+
+.pie {
+    visibility: hidden;
+    background-color: #1f1f1f;
+    height: 10vh;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+    background: #59b87e;
+    background: linear-gradient(90deg, rgb(89, 184, 97) 0%, rgb(38, 133, 54) 100%);
+
+    
+  
+    .seccion-2__imagen__marco {
+        margin-top: 25px;
+        background-color: white;
+        border-radius: 25px;
+        padding: 3%;
+        height: 203px;
+        width: 422px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .seccion-2__imagen-marco__imagen {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-position: 50% 50%;
+        
+    }
+    
+    .seccion-2__botones {
+        font-size: 1.9em;
+    }
+
+    #botonSiguiente {
+        font-size: 1.9em;
+    }
+    
+}
+}

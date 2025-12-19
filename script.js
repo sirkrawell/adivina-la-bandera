@@ -77,6 +77,19 @@ creacionPaises("Gambia ",null,"banderas/gambia.png")
 creacionPaises("Grecia ",null,"banderas/grecia.png")
 creacionPaises("Guinea ",null,"banderas/guinea.png")
 
+creacionPaises("Haiti ",null,"banderas/haiti.png")
+creacionPaises("Honduras",null,"banderas/honduras.png")
+creacionPaises("Hungria",null,"banderas/hungria.png")
+
+creacionPaises("India",null,"banderas/india.png")
+creacionPaises("Indonesia",null,"banderas/indonesia.png")
+creacionPaises("Iran",null,"banderas/iran.png")
+creacionPaises("Irak",null,"banderas/irak.png")
+creacionPaises("Irlanda",null,"banderas/irlanda.png")
+creacionPaises("Islandia",null,"banderas/islandia.png")
+creacionPaises("Israel",null,"banderas/israel.png")
+creacionPaises("Italia",null,"banderas/italia.png")
+
 
 
 
@@ -215,8 +228,8 @@ function entregarOpcionQueNoSeaLaElegida (OpcionPaisVerificar) {
 }
 
 //EVENTOS PARA LOSBOTONES EMPEZAR Y SIGUIENTE
-$botonEmpezar.addEventListener("click",cargaDeDatos )
-$botonSiguiente.addEventListener("click",cargaDeDatos )
+$botonEmpezar.addEventListener("pointerdown",cargaDeDatos )
+$botonSiguiente.addEventListener("pointerdown",cargaDeDatos )
 
 //EVENTOS PARA LOS BOTONES DE LAS OPCIONES 
 

@@ -9,6 +9,14 @@ class Pais {
 
 let contadorAdivinados = 0
 
+
+//AQUICARGARE LOS SONIDOS
+
+const sonidoExito = new Audio('sonidos/correcto.mp3');
+const sonidoError = new Audio('sonidos/incorrecto.mp3');
+sonidoExito.volume = 0.3
+sonidoError.volume = 0.3
+
 //AQUI VOY A CARGAR LOS PAISES
 let paises = []
 
@@ -218,7 +226,8 @@ function bienMal(elemento) {
         if(respuestaSeleccionada==respuestaCorrecta) {
         elemento.target.classList.add("verde")
 
-        
+        sonidoExito.currentTime = 0;
+        sonidoExito.play()
         $cuadroDeTexto.innerHTML = `CORRECTO ✅: La respuesta era ${respuestaCorrecta}`
         $cuadroDeTexto.classList.remove("seccion-2__texto__texto--rojo")
         $cuadroDeTexto.classList.add("seccion-2__texto__texto--verde")
@@ -231,7 +240,8 @@ function bienMal(elemento) {
     else {
         elemento.target.classList.add("rojo")
 
-       
+        sonidoError.currentTime = 0;
+        sonidoError.play()
         $cuadroDeTexto.innerHTML = `INCORRECTO PEDAZO DE... ❌: La respuesta era ${respuestaCorrecta}`
         $cuadroDeTexto.classList.remove("seccion-2__texto__texto--verde")
         $cuadroDeTexto.classList.add("seccion-2__texto__texto--rojo")

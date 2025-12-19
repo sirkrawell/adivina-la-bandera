@@ -1,6 +1,6 @@
 class Pais {
-    constructor(nomnbre,id,adivinado,url) {
-        this.nombre = nomnbre
+    constructor(nombre,id,adivinado,url) {
+        this.nombre = nombre
         this.id = id
         this.adivinado = adivinado
         this.url = url

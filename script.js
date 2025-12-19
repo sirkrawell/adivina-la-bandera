@@ -49,6 +49,24 @@ creacionPaises("Colombia",null,"banderas/colombia.png")
 creacionPaises("Corea del Sur",null,"banderas/corea del sur.png")
 creacionPaises("Costa rica",null,"banderas/costa rica.svg")
 
+creacionPaises("Dinamarca",null,"banderas/dinamarca.png")
+creacionPaises("Dominica",null,"banderas/dominica.png")
+
+creacionPaises("ecuador",null,"banderas/ecuador.png")
+creacionPaises("Egipto",null,"banderas/egipto.png")
+creacionPaises("España",null,"banderas/españa.png")
+creacionPaises("Estados Unidos",null,"banderas/estados unidos.png")
+creacionPaises("Estonia",null,"banderas/estonia.png")
+creacionPaises("Etiopia",null,"banderas/etiopia.png")
+
+creacionPaises("Filipinas",null,"banderas/filipinas.png")
+creacionPaises("Finlandia",null,"banderas/finlandia.png")
+creacionPaises("Francia",null,"banderas/francia.png")
+creacionPaises("Fiyi",null,"banderas/fiyi.png")
+
+
+
+
 
 creacionPaises("escocia",null,"banderas/escocia.png")
 

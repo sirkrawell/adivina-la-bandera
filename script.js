@@ -215,13 +215,8 @@ function entregarOpcionQueNoSeaLaElegida (OpcionPaisVerificar) {
 }
 
 //EVENTOS PARA LOSBOTONES EMPEZAR Y SIGUIENTE
-<<<<<<< HEAD
 $botonEmpezar.addEventListener("pointerdown",cargaDeDatos )
 $botonSiguiente.addEventListener("pointerdown",cargaDeDatos )
-=======
-$botonEmpezar.addEventListener("click",cargaDeDatos )
-$botonSiguiente.addEventListener("click",cargaDeDatos )
->>>>>>> 712ee52998cc78f9d46db7329d1186c8974146b2
 
 //EVENTOS PARA LOS BOTONES DE LAS OPCIONES 
 

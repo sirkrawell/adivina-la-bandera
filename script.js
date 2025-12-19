@@ -94,6 +94,7 @@ let $botonEmpezar = document.querySelector("#botonEmpezar")
 let $botonSiguiente = document.querySelector("#botonSiguiente")
 
 
+
 //botones de las 3 opciones a clickear y la bandera
 
 let $imagen = document.querySelector("#img__bandera")
@@ -103,12 +104,19 @@ let $Opcion1 = document.querySelector("#boton1")
 let $Opcion2 = document.querySelector("#boton2")
 let $Opcion3 = document.querySelector("#boton3") 
 
+//AQUI PARA DARLE VISIBILIDAD A LOS BOTONES
+let $opciones = document.querySelector(".seccion-2__botones")
+
+
+
 //CUADRO DE TEXTO QUE ADVIERTE EL ERROR
 let $cuadroDeTexto = document.querySelector("#cuadroInformacion")
 
 let objetoCorrecto = {}
 
 function cargaDeDatos() {
+
+    $opciones.style.pointerEvents = "auto"
 
     ClickDisponible = 1
 

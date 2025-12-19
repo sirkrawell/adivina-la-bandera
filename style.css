@@ -139,6 +139,7 @@ body {
 /*PARTE DE LOS BOTONES DE LAS OPCIONES*/
 
 .seccion-2__botones {
+    pointer-events: none;
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;

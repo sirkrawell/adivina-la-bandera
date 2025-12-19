@@ -64,6 +64,11 @@ creacionPaises("Finlandia",null,"banderas/finlandia.png")
 creacionPaises("Francia",null,"banderas/francia.png")
 creacionPaises("Fiyi",null,"banderas/fiyi.png")
 
+creacionPaises("Gabón ",null,"banderas/gabon.png")
+creacionPaises("Gambia ",null,"banderas/gambia.png")
+creacionPaises("Grecia ",null,"banderas/grecia.png")
+creacionPaises("Guinea ",null,"banderas/guinea.png")
+
 
 
 
